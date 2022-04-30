@@ -8,14 +8,19 @@ module.exports = {
     },
 
     async store (request, response){
-        const { name, bio } = request.body;
+        const { name, bio, location, email, date, telefone, destination } = request.body;
 
-        let user = await Users.findOne({ name });
+        let user = await Users.findOne({ name, bio, email });
 
         if(!user){
             user = await Users.create({
                 name,
-                bio
+                bio,
+                location,
+                destination,
+                email,
+                date,
+                telefone
                
     
             })

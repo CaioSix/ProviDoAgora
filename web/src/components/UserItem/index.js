@@ -14,7 +14,8 @@ function UserItem({user}){
           </div>
         </header>
         <p> {user.bio}</p>
-        {/* <a href={`https://github.com/${dev.github_username}`}> Acessar o perfil nom gitHub</a> */}
+        <p> De onde eu sou {user.location}</p>
+        <p> Para onde eu vou {user.destination}</p>
         <ChatModal user={user}/>
     </li>
     )
