@@ -5,7 +5,7 @@ import '../../global.css';
 import './styles.css';
 import '../../Main.css';
 import '../../Sidebar.css';
-import UserItem from '../../components/Usertem'
+import UserItem from '../../components/UserItem'
 import UserForm from '../../components/UserForm'
 
 
