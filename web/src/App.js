@@ -39,7 +39,7 @@ async function handleAddUser(data){
           {users.map( user => (
            <UserItem
             key={user.name}
-            dev={user}
+            user={user}
            />
           ))}
          
