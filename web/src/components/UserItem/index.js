@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-function DevItem({user}){
+function UserItem({user}){
     return(
         <li key={user.name} className="dev-item">
         <header>
@@ -17,4 +17,4 @@ function DevItem({user}){
     )
 }
 
-export default DevItem
+export default UserItem
