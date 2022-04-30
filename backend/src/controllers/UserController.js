@@ -6,9 +6,13 @@ module.exports = {
         const users = await Users.find();
         return response.json(users);
     },
+    async findIndex(request, response){
+        const users = await Users.find();
+        return response.json(users);
+    },
 
     async store (request, response){
-        const { name, bio, location, email, date, telefone, destination } = request.body;
+        const { name, bio, location, email, date, tel, destination } = request.body;
 
         let user = await Users.findOne({ name, bio, email });
 
@@ -20,7 +24,7 @@ module.exports = {
                 destination,
                 email,
                 date,
-                telefone
+                tel
                
     
             })

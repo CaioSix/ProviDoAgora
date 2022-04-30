@@ -6,10 +6,11 @@ const UserController = require('./controllers/UserController')
 const routes = Router();
 
 
-routes.post('/users', UserController.store);
-routes.get('/users:', UserController.store);
-
 routes.get('/users', UserController.index);
+routes.get('/users/:destination', UserController.findIndex);
+routes.post('/users', UserController.store);
+// routes.put('/users', UserController.attUser);
+// routes.delete('/users/:id', UserController.deleteUser);
 
 
 // routes.get('/search',SearchController.index)

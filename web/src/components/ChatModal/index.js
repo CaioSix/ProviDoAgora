@@ -28,7 +28,9 @@ export function ChatModal({user}) {
           className="modal-content"
         >
           <h2>Ficamos felizes por ter encontrado um match!</h2>
-          <p>Entre em contato para pedalar junto com {user.name} pelo telefone {user.telefone} ou pelo email {user.email}</p>
+          <p>Entre em contato para pedalar junto com {user.name} </p>
+          <p>pelo telefone {user.tel} </p>
+          <p>ou pelo email {user.email}</p>
           <button onClick={handleCloseModal}>Fechar</button>
         </Modal>
       </div>
