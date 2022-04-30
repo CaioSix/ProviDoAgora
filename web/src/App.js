@@ -5,7 +5,7 @@ import './global.css';
 import './App.css';
 import './Main.css';
 import './Sidebar.css';
-import UserItem from './components/Usertem'
+import UserItem from './components/UserItem'
 import UserForm from './components/UserForm'
 
 
@@ -39,7 +39,7 @@ async function handleAddUser(data){
           {users.map( user => (
            <UserItem
             key={user.name}
-            dev={user}
+            user={user}
            />
           ))}
          
