@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import api from './services/api'
+import api from '../../services/api'
 
-import './global.css';
-import './App.css';
-import './Main.css';
-import './Sidebar.css';
-import UserItem from './components/UserItem'
-import UserForm from './components/UserForm'
+import '../../global.css';
+import './styles.css';
+import '../../Main.css';
+import '../../Sidebar.css';
+import UserItem from '../../components/Usertem'
+import UserForm from '../../components/UserForm'
 
 
 
