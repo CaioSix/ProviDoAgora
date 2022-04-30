@@ -4,13 +4,14 @@ const mongoose = require('mongoose')
 const DevSchema = new mongoose.Schema({
     name: String,
     bio: String,
-    location: String
-    // // avatar_url: String,
+    location: String,
+    destination: String,
+    email: String,
+    tel: Number,
+    date: { type: Date, default: Date.now },
+    date: Date
     // interest: [String],
-    // location: {
-    //     type: PointSchema,
-    //     index: '2dsphere'
-    // }
+
 })
 
 module.exports = mongoose.model('Users', DevSchema );
