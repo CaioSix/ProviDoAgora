@@ -4,7 +4,7 @@
         
     --text-light: #EAEAE0;
     --text-dark: #4A4A4A;
-    --background-1:#E5E5E5;
+    --background-1:#FFFFFF;
     --green: #1DC690;
     --blue: #278AB0; 
 }
@@ -14,6 +14,7 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body, #root{
@@ -21,7 +22,7 @@ html, body, #root{
 }
 
 body{
-    background: #E5E6f0;
+    /*background: #E5E6f0;*/
     -webkit-font-smoothing: antialiased;
 }
 
