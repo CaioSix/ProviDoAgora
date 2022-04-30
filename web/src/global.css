@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 
+:root{
+        
+    --text-light: #EAEAE0;
+    --text-dark: #4A4A4A;
+    --background-1:#E5E5E5;
+    --green: #1DC690;
+    --blue: #278AB0; 
+}
+
 *{
     margin: 0;
     padding: 0;
