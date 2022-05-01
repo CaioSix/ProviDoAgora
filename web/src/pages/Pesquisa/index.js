@@ -14,6 +14,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
 async function handleAddUser(data){
+<<<<<<< HEAD
  const response = await api.get(`/users/:destination`,{
    params: {
     data
@@ -22,6 +23,13 @@ async function handleAddUser(data){
  setUsers(response.data);
  console.log(data)
  console.log(response)
+=======
+ const response = await api.get(`/users/${data.destination}`)
+ setUsers(response.data);
+ console.log(response)
+//  console.log(response)
+//  console.log(users)
+>>>>>>> backend
 }
 
   return (
