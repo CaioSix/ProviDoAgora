@@ -8,9 +8,7 @@ const DevSchema = new mongoose.Schema({
     destination: String,
     email: String,
     tel: Number,
-    date: { type: Date, default: Date.now },
-    date: String
-    // interest: [String],
+    hour: String
 
 })
 
