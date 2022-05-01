@@ -7,9 +7,13 @@ const routes = Router();
 
 
 routes.get('/users', UserController.index);
-routes.get('/users/:destination', UserController.findIndex);
+
+routes.get('/users/:destination', UserController.findByDestination);
+
 routes.post('/users', UserController.store);
+
 // routes.put('/users', UserController.attUser);
+
 // routes.delete('/users/:id', UserController.deleteUser);
 
 

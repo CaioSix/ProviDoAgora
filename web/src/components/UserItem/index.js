@@ -6,6 +6,7 @@ function UserItem({user}){
   console.log(user)
     return(
         <li key={user.name} className="dev-item">
+          {console.log(user)}
         <header>
           {/* <img src={dev.avatar_url} alt={dev.name}/> */}
           <div className="user-info">

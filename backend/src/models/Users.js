@@ -9,7 +9,7 @@ const DevSchema = new mongoose.Schema({
     email: String,
     tel: Number,
     date: { type: Date, default: Date.now },
-    date: Date
+    date: String
     // interest: [String],
 
 })

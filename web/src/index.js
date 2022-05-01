@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './pages/Plataforma';
 import {Home} from './pages/Home'
-
-import { BrowserRouter, Route, Routes, } from "react-router-dom";
+import Busca from './pages/Pesquisa'
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 
 ReactDOM.render(
@@ -12,6 +12,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path="/app" element={<App />} />
+        <Route path="/busca" element={<Busca />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
