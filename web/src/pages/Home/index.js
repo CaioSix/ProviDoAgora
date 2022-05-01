@@ -14,14 +14,14 @@ export function Home() {
         <nav>
           <img src={logo} alt="conectbike" />
           <ul>
-            <li>
+            {/* <li>
               <img className="me-2" src={iconelogin} />
               <Link className="link" to="/login">
                 Fazer login
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link to="/cadastro">
+              <Link to="/app">
                 <button className="btn-cadastre-se">Cadastre-se</button>
               </Link>
             </li>

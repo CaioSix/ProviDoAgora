@@ -1,0 +1,26 @@
+.form-pesquisa{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+select{
+    border-radius: 12px;
+    height: 30px;
+    text-align: center;
+}
+
+.btnPesquisar{
+    background: #278AB0 !important;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 220px;
+    border-radius: 12px !important;
+    margin: auto;
+    cursor: pointer;
+}
+.btnPesquisar:hover{
+    background: #2fa4d3 !important;
+}

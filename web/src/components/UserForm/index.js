@@ -39,6 +39,7 @@ function UserForm({ onSubmit }) {
       <div className="input-block">
         <label htmlFor="name">Nome do Usuario </label>
         <input
+          required
           name="name"
           id="name"
           value={name}
@@ -49,6 +50,7 @@ function UserForm({ onSubmit }) {
       <div className="input-block">
         <label htmlFor="techs">Bio</label>
         <input
+          required
           name="bio"
           id="bio"
           value={bio}
@@ -58,14 +60,13 @@ function UserForm({ onSubmit }) {
 
       <div className="input-group">
         <div className="input-block">
-        <label htmlFor="longitude">Origem</label> 
+        <label htmlFor="longitude">Saindo da...</label> 
           <select
             name="location"
             id="location"
             value={location}
             onChange={e => setLocation(e.target.value)}
             >
-            <option  selected>Saindo de...</option>
             <option  
               name="location"
               id="location"  
@@ -89,14 +90,13 @@ function UserForm({ onSubmit }) {
           </select>
         </div>
         <div className="input-block">
-          <label htmlFor="longitude">Destino</label> 
+          <label htmlFor="longitude">Indo para...</label> 
            <select
                 name="destination"
                 id="destination"
                 value={destination}
                 onChange={e => setDestination(e.target.value)}
             >
-            <option  selected>Saindo de...</option>
             <option  
               name="location"
               id="location"  
@@ -123,6 +123,7 @@ function UserForm({ onSubmit }) {
       <div className="input-block">
           <label htmlFor="telefone"> Telefone para contato </label>
           <input
+            required
             name="telefone"
             id="telefone"
             value={tel}
@@ -132,6 +133,7 @@ function UserForm({ onSubmit }) {
       <div className="input-block">
           <label htmlFor="email"> Email </label>
           <input
+            required
             name="email"
             id="email"
             value={email}
@@ -141,12 +143,11 @@ function UserForm({ onSubmit }) {
       <div className="input-block">
           <label htmlFor="email"> Horario </label>
           <select
-             name="hour"
+            required
+            name="hour"
             id="hour"
             value={hour}
             onChange={e => setHour(e.target.value)}>
-           
-            <option disabled selected>Horário de partida...</option>
             <option value="00">00:00</option>
             <option value="01">01:00</option>
             <option value="02">02:00</option>
