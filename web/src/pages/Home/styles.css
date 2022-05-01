@@ -11,6 +11,15 @@ header li:hover{
     filter: brightness(0.9);
 }
 
+.link{
+    text-decoration: none;
+    color: var(--text-light)
+}
+
+.link:hover{
+    text-decoration: none;
+}
+
 header nav{
     display: flex;
     align-items: center;
@@ -21,6 +30,21 @@ header nav{
 header{
     background-color: var(--green);
     color: var(--text-light);
+}
+
+.btn-cadastre-se{
+    background-color: var(--blue);
+    color:var(--text-light);
+    border-radius: 38px;
+    padding: 5px 11px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    margin-left: 30px;
+}
+
+.btn-cadastre-se:hover{
+    filter: brightness(0.9);
 }
 
 .section-1{
@@ -39,7 +63,7 @@ header{
 .section-1 p{
     font-size: 28px;
     line-height: 48px;
-    width: 50%;
+    /*width: 50%;*/
     padding-bottom: 10px ;
 }
 
@@ -49,6 +73,17 @@ header{
 
 .section-1 p:nth-of-type(3){
     padding-bottom: 106px;
+}
+
+.btn-iniciativa{
+    padding: 10px 25px;
+    background: var(--blue);
+    border-radius: 38px;
+    color:var(--text-light);
+    font-weight: 600;
+    font-size: 28px;
+    border: none;
+    margin-left: 30px;
 }
 
 /* ===== SECTION 2 ======*/
