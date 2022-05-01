@@ -4,6 +4,8 @@ import iconelogin from "../../assets/icone-login.svg";
 import { CirculedNumber } from "../../components/CirculedNumber/index";
 import { Link } from "react-router-dom";
 import logoplaneta from "../../assets/logo-planeta.svg";
+import playStory from "../../assets/playStory01.svg";
+import apple from "../../assets/apple.svg";
 
 export function Home() {
   return (
@@ -14,12 +16,12 @@ export function Home() {
           <ul>
             <li>
               <img className="me-2" src={iconelogin} />
-              <Link className="link" to="/app">
+              <Link className="link" to="/login">
                 Fazer login
               </Link>
             </li>
             <li>
-              <Link to="/app">
+              <Link to="/cadastro">
                 <button className="btn-cadastre-se">Cadastre-se</button>
               </Link>
             </li>
@@ -28,7 +30,7 @@ export function Home() {
       </header>
       <main>
         <section className="section-1">
-        <h1>Como a sua vida está impactando o planeta?</h1>
+          <h1 className="titulo">Como a sua vida está impactando o planeta?</h1>
           <div className="row">
             <div className="col-6">
               <p className="mt-4">
@@ -47,10 +49,9 @@ export function Home() {
               </p>
             </div>
             <div className="col-6">
-            <img src={logoplaneta} />
+              <img src={logoplaneta} />
             </div>
           </div>
-
         </section>
         <section className="section-2">
           <h2>
@@ -84,13 +85,114 @@ export function Home() {
               </p>
             </div>
           </div>
-          <div className="row mt-5" >
+          <div className="row mt-5">
             <Link className="mt-5 ms-3" to="/app">
-              <button className="btn-iniciativa">Faça parte dessa iniciativa</button>
+              <button className="btn-iniciativa">
+                Faça parte dessa iniciativa
+              </button>
             </Link>
-            </div>
+          </div>
+        </section>
+
+        <section className="section-3 ">
+          <h1 className="titulo text-center">
+            Encontre um parceiro <br></br>
+            para a sua viagem de bike
+          </h1>
+          <div className="d-flex justify-content-center mt-5">
+            <form className=" container-input mt-5">
+              <select name="select">
+                <option value="valor1" select>
+                  Esolha a Cidade
+                </option>
+                <option value="valor2">Brasília</option>
+                <option value="valor3">Rio de Janeiro</option>
+                <option value="valor3">Juiz de Fora</option>
+              </select>
+
+              <select name="select" id="localizacao">
+                <option value="valor1" select>
+                  Saindo de...
+                </option>
+                <option value="valor2">Botafogo</option>
+                <option value="valor2">Catete</option>
+                <option value="valor2">Copacabana</option>
+                <option value="valor2">Cosme Velho </option>
+                <option value="valor2">Gávea</option>
+                <option value="valor2">Glória</option>
+                <option value="valor2">Humaitá</option>
+                <option value="valor2">Ipanema</option>
+                <option value="valor2">Jardim Botânico</option>
+                <option value="valor2">Lagoa</option>
+                <option value="valor2">Laranjeiras</option>
+                <option value="valor2">Leblon</option>
+                <option value="valor2">Leme </option>
+                <option value="valor2">Urca </option>
+                <option value="valor2">Vidigal</option>
+                <option value="valor2">Rocinha</option>
+              </select>
+
+              <select name="select" id="destino-final">
+                <option value="valor1" select>
+                  Indo para...
+                </option>
+                <option value="valor2">Botafogo</option>
+                <option value="valor2">Catete</option>
+                <option value="valor2">Copacabana</option>
+                <option value="valor2">Cosme Velho </option>
+                <option value="valor2">Gávea</option>
+                <option value="valor2">Glória</option>
+                <option value="valor2">Humaitá</option>
+                <option value="valor2">Ipanema</option>
+                <option value="valor2">Jardim Botânico</option>
+                <option value="valor2">Lagoa</option>
+                <option value="valor2">Laranjeiras</option>
+                <option value="valor2">Leblon</option>
+                <option value="valor2">Leme </option>
+                <option value="valor2">Urca </option>
+                <option value="valor2">Vidigal</option>
+                <option value="valor2">Rocinha</option>
+              </select>
+              <input type="text" placeholder="Horário 00:00"></input>
+              <button>
+                <span>pesquisar</span>
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <section className="section-4">
+          <h3>Assine a nossa newsletter</h3>
+          <p>
+            Confira as notícias mais recentes <br></br>
+            sobre o meio ambiente, iniciativas e dicas.
+          </p>
+
+          <div className="w-100 d-flex align-items-center mt-5">
+            <input type="mail" placeholder="E-mail"></input>
+            <button>
+              <span>Enviar</span>
+            </button>
+          </div>
         </section>
       </main>
+      <footer>
+        <div className="row ">
+          <div className="col-9">
+            <p>Acesse a Central de Ajuda</p>
+            <h4>Empresa</h4>
+            <li>Quem somos</li>
+            <li>O que oferecemos</li>
+            <li>Carreiras</li>
+          </div>
+
+          <div className="col-3 d-flex align-items-end pb-5">
+          <Link to="/app"><img src={playStory} alt="playStory" /></Link>
+          <Link to="/app" className="logo-apple"> <img src={apple} alt="apple" /></Link>
+
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
