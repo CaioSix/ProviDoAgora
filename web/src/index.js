@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './pages/Plataforma';
 import {Home} from './pages/Home'
-// import Login from './pages/login'
-// import Cadastro from './pages/cadastro'
+
+import {Cadastro} from './pages/cadastro'
+import {Login} from './pages/login'
 import Pesquisa from './pages/Pesquisa'
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-
 
 
 ReactDOM.render(
