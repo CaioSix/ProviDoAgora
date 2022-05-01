@@ -1,8 +1,10 @@
+import React from "react"
 import "./style.css"
 import logo from '../../assets/conectbike-colorida.svg'
 import instagram from '../../assets/icon-instagram.svg'
 import facebook from '../../assets/icon-facebook.svg'
 import google from '../../assets/icon-google.svg'
+
 
 export function Login() {
     return (
@@ -28,3 +30,4 @@ export function Login() {
         </div>
     )
 }
+

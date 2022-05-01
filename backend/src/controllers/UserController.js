@@ -29,7 +29,7 @@ module.exports = {
 
 
     async store (request, response){
-        const { name, bio, location, email, date, tel, destination } = request.body;
+        const { name, bio, location, email, hour, tel, destination } = request.body;
 
         let user = await Users.findOne({ name, bio, email });
 
@@ -40,7 +40,7 @@ module.exports = {
                 location,
                 destination,
                 email,
-                date,
+                hour,
                 tel
                
     

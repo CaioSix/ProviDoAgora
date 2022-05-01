@@ -15,8 +15,9 @@ function UserItem({user}){
           </div>
         </header>
         <p> {user.bio}</p>
-        <p> De onde eu sou {user.location}</p>
-        <p> Para onde eu vou {user.destination}</p>
+        <p> Saindo da Zona  <strong>{user.location}</strong></p>
+        <p> Indo para Zona <strong>{user.destination}</strong></p>
+        <p> Horario de Partida: <strong>{user.hour} H</strong></p>
         <ChatModal user={user}/>
     </li>
     )

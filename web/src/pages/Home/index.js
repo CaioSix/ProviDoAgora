@@ -101,57 +101,63 @@ export function Home() {
           </h1>
           <div className="d-flex justify-content-center mt-5">
             <form className=" container-input mt-5">
-              <select name="select">
-                <option value="valor1" select>
-                  Esolha a Cidade
-                </option>
-                <option value="valor2">Brasília</option>
-                <option value="valor3">Rio de Janeiro</option>
-                <option value="valor3">Juiz de Fora</option>
-              </select>
 
               <select name="select" id="localizacao">
                 <option value="valor1" select>
                   Saindo de...
                 </option>
-                <option value="valor2">Botafogo</option>
-                <option value="valor2">Catete</option>
-                <option value="valor2">Copacabana</option>
-                <option value="valor2">Cosme Velho </option>
-                <option value="valor2">Gávea</option>
-                <option value="valor2">Glória</option>
-                <option value="valor2">Humaitá</option>
-                <option value="valor2">Ipanema</option>
-                <option value="valor2">Jardim Botânico</option>
-                <option value="valor2">Lagoa</option>
-                <option value="valor2">Laranjeiras</option>
-                <option value="valor2">Leblon</option>
-                <option value="valor2">Leme </option>
-                <option value="valor2">Urca </option>
-                <option value="valor2">Vidigal</option>
-                <option value="valor2">Rocinha</option>
+                <option  selected>Saindo de...</option>
+              <option  
+                name="location"
+                id="location"  
+                value="Leste"
+              >Zona Leste</option>
+              <option  
+                name="location"
+                id="location"
+                value="Oeste"
+                >Zona Oeste</option>
+              <option  
+                name="location"
+                id="location" 
+                value="Norte"
+                >Zona Norte</option>
+              <option  
+                name="location"
+                id="location"
+                value="Sul"
+                >Zona Sul</option>
+     
               </select>
 
-              <select name="select" id="destino-final">
+              <select 
+                name="select" 
+                id="destino-final">
                 <option value="valor1" select>
                   Indo para...
                 </option>
-                <option value="valor2">Botafogo</option>
-                <option value="valor2">Catete</option>
-                <option value="valor2">Copacabana</option>
-                <option value="valor2">Cosme Velho </option>
-                <option value="valor2">Gávea</option>
-                <option value="valor2">Glória</option>
-                <option value="valor2">Humaitá</option>
-                <option value="valor2">Ipanema</option>
-                <option value="valor2">Jardim Botânico</option>
-                <option value="valor2">Lagoa</option>
-                <option value="valor2">Laranjeiras</option>
-                <option value="valor2">Leblon</option>
-                <option value="valor2">Leme </option>
-                <option value="valor2">Urca </option>
-                <option value="valor2">Vidigal</option>
-                <option value="valor2">Rocinha</option>
+                <option  selected>Saindo de...</option>
+            <option  
+              name="location"
+              id="location"  
+              value="Leste"
+            >Zona Leste</option>
+            <option  
+              name="location"
+              id="location"
+              value="Oeste"
+              >Zona Oeste</option>
+            <option  
+              name="location"
+              id="location" 
+              value="Norte"
+              >Zona Norte</option>
+            <option  
+              name="location"
+              id="location"
+              value="Sul"
+              >Zona Sul</option>
+       
               </select>
               <input type="text" placeholder="Horário 00:00"></input>
               <button>
