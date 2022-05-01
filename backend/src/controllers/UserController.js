@@ -6,10 +6,27 @@ module.exports = {
         const users = await Users.find();
         return response.json(users);
     },
-    async findIndex(request, response){
+
+    async findByDestination(request, response){
+        const destination = request.params.destination
+        // const location = request.params.location
+        console.log(request.params)
+        const match = await Users.find({destination});
+        console.log(match)
+        return response.json(match);
+    },
+
+    async attUser(request, response){
         const users = await Users.find();
         return response.json(users);
     },
+
+    async deleteUser(request, response){
+        const users = await Users.find();
+        return response.json(users);
+    },
+
+
 
     async store (request, response){
         const { name, bio, location, email, date, tel, destination } = request.body;
