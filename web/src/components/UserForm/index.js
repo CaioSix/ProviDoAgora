@@ -67,6 +67,7 @@ function UserForm({ onSubmit }) {
             value={location}
             onChange={e => setLocation(e.target.value)}
             >
+            <option  selected>Indo para...</option>
             <option  
               name="location"
               id="location"  
@@ -97,6 +98,7 @@ function UserForm({ onSubmit }) {
                 value={destination}
                 onChange={e => setDestination(e.target.value)}
             >
+            <option  selected>Saindo de...</option>
             <option  
               name="location"
               id="location"  
@@ -148,6 +150,7 @@ function UserForm({ onSubmit }) {
             id="hour"
             value={hour}
             onChange={e => setHour(e.target.value)}>
+            <option  selected>Horario de Partida</option>
             <option value="00">00:00</option>
             <option value="01">01:00</option>
             <option value="02">02:00</option>
