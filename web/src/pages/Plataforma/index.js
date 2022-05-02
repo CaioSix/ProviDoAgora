@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api'
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 import '../../global.css';
 import './styles.css';
@@ -30,11 +32,12 @@ async function handleAddUser(data){
 
   return (
     <div id="app">
+      <Header />
       <aside>
         <strong>Cadastrar</strong>
         <UserForm onSubmit={handleAddUser} />
       </aside>
-      <main>
+      {/* <main>
         <ul>
           {users.map( user => (
            <UserItem
@@ -45,7 +48,8 @@ async function handleAddUser(data){
          
         
         </ul>
-      </main>
+      </main> */}
+    {/* <Footer /> */}
     </div>
   );
 }
