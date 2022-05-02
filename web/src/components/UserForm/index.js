@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import './styles.css'
+
+
+
+
 
 function UserForm({ onSubmit }) {
   const [name, setName] = useState('');
@@ -9,10 +14,26 @@ function UserForm({ onSubmit }) {
   const [email, setEmail]=useState('');
   const [hour, setHour]=useState('');
 
+  function valida(){
+    if(document.getElementById('name') && 
+    document.getElementById('bio') &&
+    document.getElementById('location') &&
+    document.getElementById('destination') &&
+    document.getElementById('telefone') &&
+    document.getElementById('email') &&
+    document.getElementById('hour') == 204 || 200){
+      alert("Cadastrado realizado com sucesso!")
+    }else{
+      alert("Ops, aconteceu um erro no cadastro")
+    }
+  }
+  
+
   // useEffect(() => {
 
   //   )
   // }, [])
+
 
   async function handSubmit(e) {
     e.preventDefault();
@@ -31,7 +52,6 @@ function UserForm({ onSubmit }) {
     setBio('');
     setTel('')
     setEmail('')
-
   }
 
   return (
@@ -173,12 +193,10 @@ function UserForm({ onSubmit }) {
             <option value="22">22:00</option>
             <option value="23">23:00</option>
         </select>
-          
+
       </div>
 
-     
-
-      <button type="submit">Salvar</button>
+      <button type="submit" onClick={valida} >Salvar</button>
     </form>
   )
 }
