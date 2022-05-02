@@ -17,7 +17,7 @@ async function handleAddUser(data){
 }
 
 return (
-  <main>
+  <>
           <Header />
           <section className='section-campo-pesquisa'>      
               <h1 className='texto-pesquisa'>Encontre um parceiro para a sua viagem de bike</h1>
@@ -34,7 +34,7 @@ return (
                 </ul>
           </section>
           {/* <Footer />           */}
-  </main>
+  </>
   );
 }
 

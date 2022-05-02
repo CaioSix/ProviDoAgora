@@ -32,9 +32,9 @@ async function handleAddUser(data){
 
   return (
     <div id="app">
-      <Header />
+          <Header />
       <aside>
-        <strong>Cadastrar</strong>
+        <h3>Cadastro</h3>
         <UserForm onSubmit={handleAddUser} />
       </aside>
       {/* <main>
@@ -45,11 +45,8 @@ async function handleAddUser(data){
             user={user}
            />
           ))}
-         
-        
         </ul>
       </main> */}
-    {/* <Footer /> */}
     </div>
   );
 }

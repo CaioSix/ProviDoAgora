@@ -55,7 +55,7 @@ function UserForm({ onSubmit }) {
   }
 
   return (
-    <form onSubmit={handSubmit}>
+    <form onSubmit={handSubmit} className='form-cadastro'>
       <div className="input-block">
         <label htmlFor="name">Nome do Usuario </label>
         <input
@@ -110,6 +110,7 @@ function UserForm({ onSubmit }) {
               >Zona Sul</option>
           </select>
         </div>
+        
         <div className="input-block">
           <label htmlFor="longitude">Indo para...</label> 
            <select
@@ -141,28 +142,7 @@ function UserForm({ onSubmit }) {
               >Zona Sul</option>
           </select>
         </div>
-      </div>
-      <div className="input-block">
-          <label htmlFor="telefone"> Telefone para contato </label>
-          <input
-            required
-            name="telefone"
-            id="telefone"
-            value={tel}
-            onChange={e => setTel(e.target.value)}
-          />
-      </div>
-      <div className="input-block">
-          <label htmlFor="email"> Email </label>
-          <input
-            required
-            name="email"
-            id="email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-          />
-      </div>
-      <div className="input-block">
+        <div className="input-block">
           <label htmlFor="email"> Horario </label>
           <select
             required
@@ -196,10 +176,31 @@ function UserForm({ onSubmit }) {
             <option value="22">22:00</option>
             <option value="23">23:00</option>
         </select>
-
       </div>
+      </div>
+      <div className="input-block">
+          <label htmlFor="telefone"> Telefone para contato </label>
+          <input
+            required
+            name="telefone"
+            id="telefone"
+            value={tel}
+            onChange={e => setTel(e.target.value)}
+          />
+      </div>
+      <div className="input-block">
+          <label htmlFor="email"> Email </label>
+          <input
+            required
+            name="email"
+            id="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
+      </div>
+      
 
-      <button type="submit" onClick={valida} >Salvar</button>
+      <button type="submit" onClick={valida}>Cadastrar</button>
     </form>
   )
 }

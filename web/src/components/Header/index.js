@@ -1,9 +1,11 @@
 import React from "react";
 import logo from "../../assets/conectbike.svg"
 import { Link } from "react-router-dom";
+import './styles.css';
 
 const Header = () =>{
     return(
+      <header className="header-teste">
         <nav>
           <Link to="/">
               <img src={logo} alt="conectbike" />      
@@ -19,6 +21,7 @@ const Header = () =>{
             </li>
           </ul>
         </nav>
+        </header>
     )
 }
 
